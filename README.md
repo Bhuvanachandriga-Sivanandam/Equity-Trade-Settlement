@@ -49,7 +49,7 @@ Built for operations managers and settlement teams who need real-time visibility
 | Data Generation | Python, NumPy, Pandas | ✅ Implemented |
 | Reconciliation Engine | Python, Pandas | ✅ Implemented |
 | GenAI Insights | Python (Rule-based NLG, Anomaly Detection) | ✅ Implemented |
-| Copilot Agent | Microsoft Copilot Studio | 🔄 Knowledge base generated, agent setup in progress |
+| Copilot Agent | Microsoft Copilot Studio | ✅ Knowledge base generated, agent setup in progress |
 | Visualization | Power BI (DAX, Data Modeling) | 🔄 Data ready for import |
 | Cloud Deployment | Azure Databricks, PySpark, Delta Lake | 📋 Designed — PySpark migration path documented in code |
 | Version Control | Git, GitHub | ✅ Implemented |
