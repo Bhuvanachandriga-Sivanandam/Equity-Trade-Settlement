@@ -1,0 +1,39 @@
+
+================================================================================
+DAILY SETTLEMENT SUMMARY — February 26, 2026
+================================================================================
+
+EXECUTIVE OVERVIEW
+------------------
+Today's reconciliation processed 50,000 equity trades across Internal, 
+Custodian, and Exchange datasets. The overall settlement match rate stands at 
+82.8%, with 8,593 breaks identified totaling 
+$5,876,313,083 in notional exposure.
+
+The break rate has decreased compared to the previous trading day 
+(13.6% vs 19.1%), representing a 
+5.48 percentage point decrease.
+
+KEY FINDINGS
+------------
+1. BREAK CONCENTRATION: The most common break type is Settlement Failed, 
+   accounting for the largest share of exceptions. Operations teams should prioritize 
+   investigation of these breaks first.
+
+2. COUNTERPARTY RISK: Credit Suisse has the highest break count 
+   with 604 unresolved breaks valued at $403,240,859. 
+   Recommend escalating to the counterparty relationship manager for review.
+
+3. AGING CONCERN: Breaks aging beyond 30 days require immediate attention as they 
+   approach regulatory reporting thresholds and increase settlement risk exposure.
+
+RECOMMENDED ACTIONS
+-------------------
+• Investigate all QUANTITY_MISMATCH breaks as priority — these represent the 
+  highest value discrepancies and may indicate booking errors.
+• Schedule counterparty reconciliation call with Credit Suisse 
+  to resolve outstanding breaks.
+• Review all Failed settlements for potential systemic issues in the 
+  custodian feed.
+• Escalate breaks aging 90+ days to senior management for resolution 
+  planning.

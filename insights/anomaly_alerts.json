@@ -1,0 +1,29 @@
+[
+  {
+    "severity": "HIGH",
+    "type": "BREAK_RATE_SPIKE",
+    "message": "2 trading days exceeded the 2-sigma break rate threshold of 21.2%. Average break rate is 17.2%. Investigate batch processing or data feed issues on these dates.",
+    "dates": [
+      "2025-09-09",
+      "2025-11-21"
+    ]
+  },
+  {
+    "severity": "HIGH",
+    "type": "HIGH_VALUE_BREAKS",
+    "message": "1,728 breaks exceed $1M in notional value, totaling $4,295,741,750. These require immediate senior management attention.",
+    "count": 1728
+  },
+  {
+    "severity": "HIGH",
+    "type": "AGING_BREAKS",
+    "message": "7,003 breaks are aging beyond 30 days with $4,763,557,041 in notional exposure. These approach regulatory reporting thresholds and require escalation.",
+    "count": 7003
+  },
+  {
+    "severity": "MEDIUM",
+    "type": "FAILED_SETTLEMENT_VOLUME",
+    "message": "5,465 failed settlements detected. Volume exceeds normal operational threshold. Check custodian connectivity and instruction delivery pipeline.",
+    "count": 5465
+  }
+]

@@ -1,0 +1,45 @@
+
+================================================================================
+ROOT CAUSE ANALYSIS — SETTLEMENT BREAKS
+================================================================================
+
+BREAK TYPE ANALYSIS
+-------------------
+• Settlement Failed — 5,465 instances (58.0%)
+  Root Cause: Failed settlements typically indicate insufficient securities/cash, custodian processing errors, or rejected instructions.
+  Action: Confirm custodian has received valid settlement instructions.
+
+• Quantity Mismatch — 1,998 instances (21.2%)
+  Root Cause: Likely caused by partial fills, booking errors, or lot size discrepancies between internal and custodian systems.
+  Action: Cross-reference with execution management system (EMS) fill reports.
+
+• Price Mismatch — 999 instances (10.6%)
+  Root Cause: May result from delayed price feeds, rounding differences, or currency conversion timing gaps.
+  Action: Verify price source timestamps and FX rate application logic.
+
+• Counterparty Mismatch — 554 instances (5.9%)
+  Root Cause: Indicates counterparty name mapping inconsistencies between internal master data and custodian records.
+  Action: Update counterparty reference data mapping table.
+
+• Date Mismatch — 402 instances (4.3%)
+  Root Cause: Settlement date mismatches often arise from holiday calendar differences or T+2 calculation errors across jurisdictions.
+  Action: Validate settlement calendar configuration across all systems.
+
+PATTERN ANALYSIS
+----------------
+• Counterparty Concentration: Top 3 counterparties (Credit Suisse, UBS, BNP Paribas) 
+  account for 21% of all breaks. This suggests systemic reconciliation 
+  issues with specific counterparty feeds rather than random errors.
+
+• Trade Type Pattern: 'Buy' trades show the highest absolute break 
+  count (3,416), which correlates with their higher trading volume.
+
+• Temporal Pattern: Breaks peak on Tuesdays (1,805 breaks), 
+  which may indicate end-of-week processing backlogs or batch job timing issues.
+
+RISK ASSESSMENT
+---------------
+• Total notional value at risk from unresolved breaks: $5,876,313,083
+• Average break value: $683,849 per break
+• Estimated resolution priority: HIGH for quantity and failed breaks, 
+  MEDIUM for price and counterparty mismatches, LOW for date mismatches.

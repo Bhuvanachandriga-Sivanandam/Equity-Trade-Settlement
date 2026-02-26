@@ -1,0 +1,89 @@
+{
+  "overview": {
+    "total_trades": 50000,
+    "total_breaks": 8593,
+    "match_rate": 82.8,
+    "total_break_value": 5876313083.0,
+    "report_date": "2026-02-26"
+  },
+  "break_types": {
+    "settlement_failed": {
+      "count": 5465,
+      "percentage": 58.0
+    },
+    "quantity_mismatch": {
+      "count": 1998,
+      "percentage": 21.2
+    },
+    "price_mismatch": {
+      "count": 999,
+      "percentage": 10.6
+    },
+    "counterparty_mismatch": {
+      "count": 554,
+      "percentage": 5.9
+    },
+    "date_mismatch": {
+      "count": 402,
+      "percentage": 4.3
+    }
+  },
+  "counterparty_breaks": {
+    "Credit Suisse": {
+      "total_trades": 3395,
+      "breaks": 604,
+      "match_rate": 82.2,
+      "break_value": 403240859.0
+    },
+    "UBS": {
+      "total_trades": 3317,
+      "breaks": 601,
+      "match_rate": 81.9,
+      "break_value": 411205792.0
+    },
+    "BNP Paribas": {
+      "total_trades": 3379,
+      "breaks": 591,
+      "match_rate": 82.5,
+      "break_value": 397441396.0
+    },
+    "TD Securities": {
+      "total_trades": 3288,
+      "breaks": 591,
+      "match_rate": 82.0,
+      "break_value": 469306731.0
+    },
+    "Goldman Sachs": {
+      "total_trades": 3354,
+      "breaks": 581,
+      "match_rate": 82.7,
+      "break_value": 369492803.0
+    }
+  },
+  "faq_pairs": [
+    {
+      "question": "What is today's settlement match rate?",
+      "answer": "The current settlement match rate is 82.8%. Out of 50,000 trades processed, 8,593 breaks were identified."
+    },
+    {
+      "question": "Which counterparty has the most settlement breaks?",
+      "answer": "Credit Suisse has the highest break count with 604 breaks valued at $403,240,859."
+    },
+    {
+      "question": "What are the most common types of breaks?",
+      "answer": "The top break types are: Settlement Failed (5,465), Quantity Mismatch (1,998), Price Mismatch (999)"
+    },
+    {
+      "question": "Show me all unmatched trades over $1M",
+      "answer": "There are 1,728 breaks exceeding $1M in notional value. These are flagged as HIGH priority for immediate investigation."
+    },
+    {
+      "question": "What is the break aging distribution?",
+      "answer": "Breaks are distributed across aging buckets. Breaks beyond 30 days require escalation to senior management per operational risk policy."
+    },
+    {
+      "question": "Are there any anomalies today?",
+      "answer": "The anomaly detection engine has identified 4 active alerts. [HIGH] BREAK RATE SPIKE [HIGH] HIGH VALUE BREAKS [HIGH] AGING BREAKS"
+    }
+  ]
+}

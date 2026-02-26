@@ -1,0 +1,5 @@
+trade_type,total_trades,breaks,match_rate,total_break_value
+Buy,20075,3416,83.0,2288346594.0
+Buy to Cover,4901,883,82.0,626537381.0
+Sell,17493,2986,82.9,2090838718.0
+Short Sell,7531,1308,82.6,870590390.0
